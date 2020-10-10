@@ -1,0 +1,91 @@
+
+body{
+    height: 1000px;
+ background-color:#f6f5f5;
+ margin:0px;
+ padding:0px;
+
+}
+
+
+a{
+    text-decoration:none;
+    color: black;
+    /*text-align: center;*/
+   }
+
+
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ align-items:center;
+ height:60px;
+ background-color:#ffffff;
+ box-shadow:2px 2px 12px rgba(12, 12, 12, 0.2);
+ padding:0px 5%;
+ 
+ 
+}
+nav ul{
+ display: flex;
+ flex-direction: row;
+ list-style:none;
+ 
+}
+ 
+ /* home about contact*/
+nav ul li a{
+ margin:30px;
+ /*back to edit*/
+ font-family:Arial, Helvetica, sans-serif;
+ color:#505050;
+ font-size: 30px;
+ font-weight:50;
+
+ 
+}
+
+
+.logo{
+    font-family: 'Monoton', cursive;
+ color:#000000;
+ font-size: 40px;
+}
+
+
+.home{
+ color:#2d2a2a;
+ font-weight:bold;
+
+}
+.container{
+    height: 500px;
+    margin: 0 60px;
+    margin: 50px auto;
+
+}
+footer{
+
+    position: fixed;
+     bottom: 0;
+     width: 100%;
+    }
+
+    .my-projects {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        justify-content: space-around;
+        
+    
+    }
+ 
+    .project1{
+        margin: 50px;
+
+    }
+    .project2{
+        margin: 50px;  
+    }
+  
