@@ -88,4 +88,45 @@ footer{
     .project2{
         margin: 50px;  
     }
-  
+   
+      
+      @media (min-width: 376px ) and (max-width: 425px) {
+        ul {width: 780px;}
+        ul i {display:inline-block ; width: 100%;}
+        .main  { flex-direction: column-reverse;
+            justify-content:space-around; width: 700px;margin: 0px; padding: 0px; text-align: center; margin: 30px auto;}
+        footer{ position: fixed; bottom: 0;left: 0;}
+        .my-projects {
+            display: grid;
+            grid-template-columns:1fr;}
+
+
+      }
+      
+      
+      @media (min-width: 426px ) and (max-width: 768px) {
+        ul {width: 780px;}
+        ul i {display:inline-block ; width: 100%;}
+        .main  { flex-direction: column-reverse;
+            justify-content:space-around; width: 700px;margin: 0px; padding: 0px; text-align: center; margin: 30px auto;}
+        footer{ position: fixed; bottom: 0;left: 0;}
+        .my-projects {
+            display: grid;
+            grid-template-columns:1fr;}
+ 
+    
+    
+      }
+      
+      
+      @media (min-width: 1025px ) and (max-width: 1440px) {
+        ul {width: 780px;}
+        ul i {display:inline-block ; width: 100%;}
+        .main  { flex-direction: column-reverse;
+            justify-content:space-around; width: 700px;margin: 0px; padding: 0px; text-align: center; margin: 30px auto;}
+        footer{ position: fixed; bottom: 0;left: 0;}
+   
+      
+    
+    }
+      
