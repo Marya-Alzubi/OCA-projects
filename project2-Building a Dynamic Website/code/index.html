@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Dynamic website ">
+  <meta property="og:locale" content="en_US">
+  <meta name="description"
+    content="Validation form, Todo list, Calculator ,  Full-stack web developer, Back-end Developer, Front-end Developer">
+  <meta property="og:description"
+    content="Validation form, Todo list, Calculator , Full-stack web developer,Back-end Developer, Front-end Developer">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Ubuntu, linux, Web Developer,">
+  <meta name="author" content="Mohammad & Lara & Maria ">
+  <title>Home </title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info static-top">
+    <div class="container ">
+      <a class="navbar-brand" href="#">
+        <!-- <img src="http://placehold.it/150x50?text=Logo" alt=""> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning static-top">
+    <div class="container ">
+      <a class="navbar-brand" href="#">
+        <!-- <img src="http://placehold.it/150x50?text=Logo" alt=""> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="all">
+    <div class="image"></div>
+    <div class="container m-5">
+      <form id="formBox" action="">
+        <h5>Sign Up here</h5>
+        <br>
+        <div class="form-group">
+
+          <input class="form-control" type="text" id="uname" name="uname" placeholder="Username" onblur="allLetter()"
+           >
+          <div id="erorr"></div> <br>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" onblur="Email()" >
+          <div id="erorr2"></div>
+          <br>
+          <input class="form-control" type="password" id="password" name="password" placeholder="password" onblur="Password()"  >
+          <div id="erorr3"></div>
+          <br>
+        </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <small for="date"> Date of birth </small><br>
+            <input class="form-control" type="date" id="date" name="date" max="2002-12-31" min="1950-12-31" >
+          </div>
+          <div class="form-group col">
+            <small for="number"> Phone Number </small>
+            <input class="form-control" type="text" id="number" name="number" placeholder="077-7777-777" onblur="Number()">
+            <div id="erorr4"></div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="form-row">
+          <div class="form-group col">
+            <input class="form-control" type="button" id="lbutton" name="button" value="Save to localStorage" onclick="lStorage()"> <br>
+          </div>
+          <div class="form-group col">
+            <input class="form-control" type="button" id="sbutton" name="button" value="Save to sessionStorage" onclick="sStorage()"> <br>
+          </div>
+        </div>
+        <div form-group>
+          <input class="form-control" type="button" id="cbutton" name="button" value="Clear data" onclick="cStorage()"> <br>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="js/home.js"></script>
+
+</body>
+
+</html>
