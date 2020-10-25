@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> TO DO LIST </h1>
+    <label for="To Do"> To Do </label>
+    <input id="todo" type="text" placeholder="To Do " value="">
+
+
+
+
+    <script>
+        // var input = document.getElementById("todo");
+        input.addEventListener("keyup", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                var inptValue = document.getElementById("todo").value;
+                var newItem = document.createElement("li");
+                var textnode = document.createTextNode(inptValue + "  " + new Date());
+                newItem.appendChild(textnode);
+                document.body.appendChild(newItem);
+
+            }
+        });
+    </script>
+</body>
+
+</html>
